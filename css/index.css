@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 251, 250, 0.0901960784);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #66347F;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9E4784;
+}
+
+body {
+  margin: 0px;
+  background-color: #37306B;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 97px;
+  color: #FFF7E9;
+}
+
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 15px;
+  color: #FFF7E9;
+}
+
+#Title {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 50px 0px;
+  width: 100;
+  height: 246px;
+  pointer-events: none;
+}
+#Title #Logo_Name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 30px;
+  pointer-events: all;
+}
+#Title #Social_Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  pointer-events: all;
+}
+#Title #Social_Contact #Mail {
+  margin-bottom: 8rem;
+}
+#Title #Social_Contact #Behance {
+  margin-top: 4rem;
+}
+#Title #Social_Contact #Mail:hover, #Title #Social_Contact #Linked:hover, #Title #Social_Contact #Behance:hover {
+  cursor: pointer;
+}
+
+#Hero {
+  margin-top: -20rem;
+}
+
+#About_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10rem;
+}
+#About_me .about_me_para {
+  width: 840px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFF7E9;
+  margin-top: -2rem;
+}
+#About_me #RES {
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem 3rem;
+  width: 210px;
+  height: 52px;
+  background: #FFF7E9;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 21px;
+  color: #D27685;
+}
+#About_me #RES:hover {
+  filter: drop-shadow(0px 6px 12px rgba(33, 5, 74, 0.818));
+  color: #66347F;
+  cursor: pointer;
+}
+#About_me .Exp_Sliders {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFF7E9;
+}
+#About_me .Exp_Sliders .sliders {
+  width: 10rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10em;
+}
+#work h2 {
+  align-self: center;
+}
+#work .proj {
+  display: grid;
+  flex-direction: column;
+}
+#work .proj button {
+  width: 5rem;
+  justify-self: center;
+  align-self: flex-end;
+  align-items: center;
+  border: none;
+  margin: 2rem 0rem 3rem;
+  width: 210px;
+  height: 58px;
+  background: #FFF7E9;
+  border-radius: 5px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 21px;
+  color: #D27685;
+  filter: drop-shadow(0px 4px 10px rgba(24, 21, 28, 0.4));
+}
+#work .proj button:hover {
+  color: #66347F;
+  cursor: pointer;
+}
+#work #RUBEX {
+  background-image: url("/Images/RUBEX cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#work #Paws {
+  background-image: url("/Images/Paws cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#work #GT {
+  background-image: url("/Images/GT Cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#work #TSY {
+  background-image: url("/Images/TSY Cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#end {
+  background-color: #1c1b20;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#end #LND {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30rem;
+}
+#end #LND svg {
+  scale: 1.5;
+}
+#end #LND #N_D {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #FFF7E9;
+}
+#end #LND #N_D h5 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  margin: 0px 0px 10px;
+}
+#end #top {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 88rem;
+  cursor: pointer;
+}
+
+#ContactOverlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 101; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: all 0.5s;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFF7E9;
+}
+#ContactOverlay h2 {
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: #FFF7E9;
+}
+#ContactOverlay h3 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #323232;
+}
+#ContactOverlay #Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 600px;
+  width: 900px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  gap: 3rem;
+}
+#ContactOverlay #Container #info {
+  color: #FFFFFF;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url(/images/derrick-cooper-L505cPnmIds-unsplash.jpg);
+  padding: 40px;
+  border-radius: 10px 0px 0px 10px;
+}
+#ContactOverlay #Container #info span {
+  width: 400px;
+}
+#ContactOverlay #Container #info #close {
+  cursor: pointer;
+}
+#ContactOverlay #Container #info #Email {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#ContactOverlay #Container #info #Phone {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#ContactOverlay #Container #info #ARP {
+  scale: 0.7;
+  margin-top: 10rem;
+  margin-left: -10px;
+}
+#ContactOverlay form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin-top: 1rem;
+  gap: 20px;
+  width: 400px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 0px 40px 40px 0px;
+}
+#ContactOverlay form h2 {
+  display: flex;
+  justify-content: center;
+}
+#ContactOverlay textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+#ContactOverlay form input, #ContactOverlay textarea {
+  border: 0;
+  border-radius: 5px;
+  background-color: rgba(198, 198, 198, 0.17);
+  width: 362px;
+  padding: 10px 10px 10px 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+  color: #2C2C2C;
+}
+#ContactOverlay button {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #66347F;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+  color: #FFF7E9;
+}
+#ContactOverlay button:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 8px 12px rgba(59, 55, 65, 0.5));
+}/*# sourceMappingURL=index.css.map */
