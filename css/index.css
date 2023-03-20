@@ -350,6 +350,9 @@ h4 {
   padding: 40px;
   border-radius: 10px 0px 0px 10px;
 }
+#ContactOverlay #Container #info #close2 {
+  display: none;
+}
 #ContactOverlay #Container #info span {
   width: 400px;
 }
