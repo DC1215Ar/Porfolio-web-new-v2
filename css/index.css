@@ -553,6 +553,9 @@ h4 {
     width: 70vw;
     margin-top: 3rem;
   }
+  #ContactOverlay #Container #ContForm #close2 {
+    display: block;
+  }
   #ContactOverlay #Container #ContForm textarea {
     resize: vertical;
     min-height: 100px;
