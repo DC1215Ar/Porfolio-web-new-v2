@@ -61,4 +61,46 @@ body {
 }
 #Paws_imgs img {
   width: 1000px;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  #Top {
+    position: fixed;
+    margin-left: 83vw;
+    margin-top: 75vh;
+    scale: 1.5;
+    border: none;
+    background-color: #37306B;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    filter: drop-shadow(1px 3px 8px rgba(0, 0, 0, 0.2));
+    transition: position 0.25 ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5 ease-in-out;
+    cursor: pointer;
+    z-index: 100;
+  }
+  #Return {
+    position: fixed;
+    margin-left: 76.5vw;
+    margin-top: 85vh;
+    scale: 0.65;
+    border: none;
+    background-color: #37306B;
+    border-radius: 5px;
+    filter: drop-shadow(1px 3px 8px rgba(0, 0, 0, 0.2));
+    transition: position 0.25 ease-in-out;
+    cursor: pointer;
+    z-index: 99;
+  }
+  #Paws_imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Paws_imgs img {
+    width: 100vw;
+  }
 }/*# sourceMappingURL=Paws.css.map */

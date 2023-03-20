@@ -39,6 +39,10 @@
 
         <div id="Social_Contact">
 
+            <svg id="Drop" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3413 8.6149L1.96937 0.158203L0 2.14785L6.40672 8.62053L0 15.0834L1.96937 17.073L10.3413 8.6149Z" fill="#FFF7E9"/>
+            </svg>
+
             <svg id="Mail" width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.5144 11.3386L1.05519 1.75879C0.945644 2.01672 0.879796 2.29109 0.860352 2.57064V13.0353C0.88092 13.7109 1.15958 14.3529 1.63903 14.8294C2.11847 15.3058 2.76225 15.5804 3.43796 15.5967H21.5949C22.2524 15.5734 22.874 15.291 23.3242 14.8112C23.7744 14.3314 24.0166 13.693 23.9979 13.0353V2.57876C24.0092 2.31135 23.9763 2.04391 23.9005 1.78721L12.5144 11.3386Z" fill="#FFF7E9"/>
                 <path d="M12.5144 9.2034L22.9385 0.536954C22.5357 0.287022 22.0687 0.160056 21.5949 0.171624H3.43795C2.97529 0.160672 2.51909 0.281763 2.12276 0.520717L12.5144 9.2034Z" fill="#FFF7E9"/>
@@ -67,6 +71,21 @@
             })
         </script>
     </div>
+
+    <div id="Hero_Mobile">
+
+        <script>
+            var animation = bodymovin.loadAnimation({
+                container: document.getElementById('Hero_Mobile'),
+                path: 'Anim/HeroAnimMobile.json',
+                render: 'svg',
+                loop: true,
+                autoplay: true,
+                name: 'hero animation mobile'
+            })
+        </script>
+    </div>
+
 
     <div id="About_me">
 
@@ -111,7 +130,17 @@
             <button class="Project_view" onclick="location.href = 'RUBEX.html'">VIEW</button>
         </div>
 
+        <div class="proj" id="RUBEX_M">
+            <img src="Images/Mobile RUBEX.jpg" alt="#">
+            <button class="Project_view" onclick="location.href = 'RUBEX.html'">VIEW</button>
+        </div>
+
         <div class="proj" id="Paws">
+            <button class="Project_view" onclick="location.href = 'Paws.html'">VIEW</button>
+        </div>
+
+        <div class="proj" id="Paws_M">
+            <img src="Images/Mobile Paws.jpg" alt="#">
             <button class="Project_view" onclick="location.href = 'Paws.html'">VIEW</button>
         </div>
 
@@ -119,7 +148,17 @@
             <button class="Project_view" onclick="location.href = 'GT.html'">VIEW</button>
         </div>
 
+        <div class="proj" id="GT_M">
+            <img src="Images/Mobile GT.jpg" alt="#">
+            <button class="Project_view" onclick="location.href = 'GT.html'">VIEW</button>
+        </div>
+
         <div class="proj" id="TSY">
+            <button class="Project_view" onclick="location.href = 'TSY.html'">VIEW</button>
+        </div>
+
+        <div class="proj" id="TSY_M">
+            <img src="Images/Mobile TSY.jpg" alt="#">
             <button class="Project_view" onclick="location.href = 'TSY.html'">VIEW</button>
         </div>
 
@@ -188,6 +227,10 @@
 
             <form id="ContForm" onsubmit="SendMail(); reset(); return false;">
 
+                <svg id="close2" onclick="Close()" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.6472 0.576172L10.9238 9.29958L2.20036 0.576172L0 2.77653L8.72341 11.4999L0 20.2233L2.20036 22.4237L10.9238 13.7003L19.6472 22.4237L21.8475 20.2233L13.1241 11.4999L21.8475 2.77653L19.6472 0.576172Z" fill="#66347F"/>
+                </svg>
+
                 <h3>CONTACT US</h3>
     
                 <input type="text" id="name" placeholder="Your Name" required>
@@ -200,6 +243,31 @@
         </div>
     </div>
 
+<script>
+
+    const showButton = document.getElementById('Drop');
+    const hiddenElement1 = document.getElementById('Mail');
+    const hiddenElement2 = document.getElementById('Linked');
+    const hiddenElement3 = document.getElementById('Behance');
+
+    showButton.addEventListener('click', () => {
+
+        if(hiddenElement1.style.display === 'none'){
+            showButton.style.transform = 'rotate(-90deg)';
+            hiddenElement1.style.display = 'block';
+            hiddenElement2.style.display = 'block';
+            hiddenElement3.style.display = 'block';
+        }
+        else{
+            showButton.style.transform = 'rotate(90deg)';
+            hiddenElement1.style.display = 'none';
+            hiddenElement2.style.display = 'none';
+            hiddenElement3.style.display = 'none';
+        }
+        
+    });
+
+</script>
 
 <script>
 

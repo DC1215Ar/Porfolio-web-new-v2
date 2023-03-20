@@ -72,6 +72,9 @@ h4 {
   align-items: flex-start;
   pointer-events: all;
 }
+#Title #Social_Contact #Drop {
+  display: none;
+}
 #Title #Social_Contact #Mail {
   margin-bottom: 8rem;
 }
@@ -84,6 +87,10 @@ h4 {
 
 #Hero {
   margin-top: -20rem;
+}
+
+#Hero_Mobile {
+  display: none;
 }
 
 #About_me {
@@ -190,8 +197,24 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#work #RUBEX_M {
+  display: none;
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #work #Paws {
   background-image: url("/Images/Paws cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#work #Paws_M {
+  display: none;
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -206,8 +229,24 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#work #GT_M {
+  display: none;
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #work #TSY {
   background-image: url("/Images/TSY Cover.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#work #TSY_M {
+  display: none;
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -387,4 +426,164 @@ h4 {
 #ContactOverlay button:hover {
   cursor: pointer;
   filter: drop-shadow(0px 8px 12px rgba(59, 55, 65, 0.5));
+}
+
+/* For Mobile */
+@media only screen and (max-width: 500px) {
+  h2 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFF7E9;
+  }
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 15px;
+    color: #FFF7E9;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 251, 250, 0.0901960784);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #66347F;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9E4784;
+  }
+  #Logo_Name {
+    scale: 0.7;
+  }
+  #Logo_Name h4 {
+    display: none;
+  }
+  #Title #Social_Contact #Drop {
+    display: flex;
+    transform: rotate(90deg);
+    scale: 1.2;
+    margin-left: 7px;
+  }
+  #Title #Social_Contact #Mail {
+    display: none;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  #Title #Social_Contact #Linked {
+    display: none;
+  }
+  #Title #Social_Contact #Behance {
+    display: none;
+    margin-top: 4rem;
+  }
+  #Hero {
+    display: none;
+  }
+  #Hero_Mobile {
+    display: block;
+    scale: 1;
+    margin-top: -10rem;
+  }
+  #About_me {
+    margin-top: -10rem;
+  }
+  #About_me .about_me_para {
+    width: 350px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFF7E9;
+    margin-top: -2rem;
+  }
+  #About_me .Exp_Sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  #About_me .Exp_Sliders .sliders {
+    width: 8rem;
+    height: 12rem;
+  }
+  #work .proj button {
+    margin: -10rem 0rem 3rem;
+  }
+  #work #RUBEX, #work #GT, #work #Paws, #work #TSY {
+    display: none;
+  }
+  #work #RUBEX_M, #work #GT_M, #work #Paws_M, #work #TSY_M {
+    display: grid;
+  }
+  #end {
+    flex-direction: column;
+  }
+  #end #LND {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #end #LND #N_D {
+    align-items: center;
+  }
+  #end #top {
+    margin-left: 0px;
+    margin-top: 15rem;
+  }
+  #ContactOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #ContactOverlay #Container {
+    width: 375px;
+  }
+  #ContactOverlay #Container #info {
+    display: none;
+  }
+  #ContactOverlay #Container #ContForm {
+    width: 70vw;
+    margin-top: 3rem;
+  }
+  #ContactOverlay #Container #ContForm textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  #ContactOverlay #Container #ContForm input, #ContactOverlay #Container #ContForm textarea {
+    border: 0;
+    border-radius: 5px;
+    background-color: rgba(198, 198, 198, 0.17);
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: justify;
+    color: #2C2C2C;
+  }
+  #ContactOverlay #Container #ContForm button {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-left: 2rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #66347F;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #FFF7E9;
+  }
 }/*# sourceMappingURL=index.css.map */
